@@ -1,5 +1,12 @@
 name: Free Disk Space (Ubuntu)
-on: push
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+      - '**.txt'
+  workflow_dispatch:
 
 jobs:
   free-disk-space:
